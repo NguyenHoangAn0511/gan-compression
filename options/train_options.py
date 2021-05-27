@@ -19,7 +19,7 @@ class TrainOptions(BaseOptions):
         assert isinstance(parser, ArgumentParser)
         parser.add_argument('--log_dir', type=str, default='logs',
                             help='training logs are saved here')
-        parser.add_argument('--tensorboard_dir', type=str, default=None,
+        parser.add_argument('--tensorboard_dir', type=str, default='tensorboard',
                             help='tensorboard is saved here')
         parser.add_argument('--print_freq', type=int, default=100,
                             help='frequency of showing training results on console')
